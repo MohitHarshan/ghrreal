@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vital signs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/Textcolor"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PULSE : "
+        android:textSize="20dp"
+        android:textColor="@color/Textcolor"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/pulse"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/pulse"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/pulseeentry"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BP (Sitting) :"
+        android:textSize="20dp"
+        android:textColor="@color/Textcolor"
+        android:layout_below="@+id/pulse"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/bp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Systolic"
+        android:textSize="15dp"
+        android:textColor="@color/Textcolor"
+        android:layout_below="@+id/bp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/systolic"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diastolic :"
+        android:textSize="15dp"
+        android:textColor="@color/Textcolor"
+        android:layout_below="@+id/systolic"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/diastolic"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/pulse"
+        android:layout_marginRight="100dp"
+        android:layout_below="@+id/pulseeentry"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/systolicentry"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@+id/systolicentry"
+        android:layout_toRightOf="@+id/pulse"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/diastolicentry"
+
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/diastolicentry"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:text="SUBMIT"
+    android:background="@drawable/buttonlogin"
+
+    />
+
+
+
+</RelativeLayout>

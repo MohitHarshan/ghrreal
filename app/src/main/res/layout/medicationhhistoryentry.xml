@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/nametext"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="20dp"
+    android:text="MEDICATION/TREATMENT"
+    android:textColor="@color/Textcolor"
+    android:textSize="15dp"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/indicationtext"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="INDICATION :"
+        android:layout_below="@+id/nametext"
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dosetext"
+        android:layout_below="@+id/indicationtext"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="DOSE : "
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frequencytext"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/dosetext"
+        android:layout_marginLeft="20dp"
+        android:text="FREQUENCY"
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/starttext"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/frequencytext"
+        android:layout_marginLeft="20dp"
+        android:text="START DATE"
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stoptext"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/starttext"
+        android:layout_marginLeft="20dp"
+        android:text="STOP DATE"
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ongoingtext"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/stoptext"
+        android:layout_marginLeft="20dp"
+        android:text="ONGOING"
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+        />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/mednameentry"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/edittexts"
+    android:layout_marginRight="30dp"
+    android:layout_toRightOf="@+id/indicationtext"
+    android:id="@+id/indicationentry"
+   android:layout_marginLeft="10dp"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/indicationentry"
+        android:background="@drawable/edittexts"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/dosetext"
+        android:id="@+id/doseentry"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/doseentry"
+        android:background="@drawable/edittexts"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/frequencytext"
+        android:id="@+id/frequencyentry"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/edittexts"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/nametext"
+        android:id="@+id/mednameentry"
+        android:layout_marginLeft="10dp"
+        />
+
+<Button
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_below="@+id/frequencyentry"
+    android:layout_toRightOf="@+id/starttext"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="25dp"
+    android:id="@+id/pickstart"
+    android:background="@drawable/buttonlogin"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/startdisplay"
+    android:layout_toRightOf="@+id/pickstart"
+    android:layout_below="@+id/frequencyentry"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="10dp"
+    android:text="!!/!!/1!"
+
+
+
+    />
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/startdisplay"
+        android:layout_toRightOf="@+id/starttext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/pickstop"
+        android:background="@drawable/buttonlogin"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pickstart"
+        android:layout_below="@+id/pickstart"
+        android:layout_marginTop="25dp"
+        android:id="@+id/stopdisplay"
+        android:layout_marginLeft="10dp"
+        android:text="!!/!!/1!"
+
+
+
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stoptext"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioongoing"
+        android:layout_toRightOf="@+id/ongoingtext"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal"
+
+        >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:id="@+id/ongoingyes"
+                />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO"
+            android:id="@+id/ongoingno"
+            />
+
+
+
+
+
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioongoing"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonlogin"
+        android:text="ADD"
+        android:id="@+id/Buttonaddmed"
+        android:textColor="#FFFFFF"
+
+
+        />
+
+
+
+
+</RelativeLayout>

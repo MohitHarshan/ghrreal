@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/addpatients"
+          android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:title="Add patients"
+        app:showAsAction="always"
+        ></item>
+
+  <item android:id="@+id/sync"
+      android:title="Sync Online"
+      app:showAsAction="always"
+      android:icon="@drawable/ic_sync_black_24dp"
+      >
+
+  </item>
+    <item android:id="@+id/logout"
+          android:title="Logout"
+         >
+
+
+    </item>
+
+</menu>

@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication Details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/Textcolor"
+
+        android:textSize="30dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:layout_marginTop="100dp"
+    android:id="@+id/lin"
+
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="50"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/datetext"
+        android:layout_marginLeft="20dp"
+        android:text="Date of initiation of treatment with medications"
+        android:textColor="@color/Textcolor"
+
+
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/datetext"
+        android:layout_marginLeft="10dp"
+
+
+        android:id="@+id/datedisplay"
+
+        />
+    <Button
+        android:layout_width="20dp"
+        android:layout_weight="0"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/datedisplay"
+
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/buttonlogin"
+        android:id="@+id/datechoose"
+
+
+
+
+        />
+</LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/lin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/addmedicinebutton"
+        android:text="Add Medicine"
+        android:background="@drawable/buttonlogin"
+        android:textColor="#FFFFFF"
+        />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addmedicinebutton"
+        android:layout_centerHorizontal="true"
+        android:text="submit"
+        android:background="@drawable/buttonlogin"
+        android:layout_marginTop="10dp"
+        android:id="@+id/submit"
+
+        />
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/submit"
+        android:layout_marginTop="20dp"
+        android:id="@+id/medicinereycler"
+
+
+
+
+        ></android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

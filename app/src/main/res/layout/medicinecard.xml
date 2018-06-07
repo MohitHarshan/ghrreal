@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:elevation="10dp"
+    >
+
+
+    <RelativeLayout  android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Medication/Treatment"
+        android:id="@+id/medname"
+        android:textColor="@color/Textcolor"
+        />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/medname"
+      android:text="Indication"
+      android:id="@+id/indication"
+      android:layout_marginLeft="10dp"
+
+
+      />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indication"
+            android:text="Dose"
+            android:id="@+id/dose"
+            android:layout_marginLeft="10dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dose"
+            android:text="Frequency"
+         android:id="@+id/frequency"
+            android:layout_marginLeft="10dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/medname"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/Red"
+            android:text="Start Date"
+             android:id="@+id/starttext"
+            android:layout_marginLeft="10dp"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/starttext"
+            android:layout_toRightOf="@+id/medname"
+            android:textColor="@color/Red"
+            android:layout_marginTop="10dp"
+            android:text="Stop date"
+
+            android:layout_marginLeft="10dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/starttext"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/Textcolor"
+            android:text="Start Date"
+            android:id="@+id/startentry"
+            android:layout_marginLeft="10dp"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/starttext"
+            android:layout_toRightOf="@+id/starttext"
+            android:textColor="@color/Textcolor"
+            android:layout_marginTop="10dp"
+            android:text="Stop Date"
+            android:id="@+id/stopdateentry"
+            android:layout_marginLeft="10dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stopdateentry"
+            android:layout_toRightOf="@+id/starttext"
+            android:textColor="@color/Textcolor"
+            android:layout_marginTop="10dp"
+            android:text="Ongoing : "
+            android:id="@+id/ongoingtext"
+            android:layout_marginLeft="10dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stopdateentry"
+            android:layout_toRightOf="@+id/ongoingtext"
+            android:textColor="@color/Textcolor"
+            android:layout_marginTop="10dp"
+            android:text="Ongoing"
+            android:id="@+id/ongoingentry"
+            android:layout_marginLeft="10dp"
+
+
+            />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+</RelativeLayout>

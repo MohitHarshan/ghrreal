@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context="com.example.reubro.ghr.Patientadd">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="ADD PATIENT DETAILS"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/Textcolor"
+
+        />
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Name : "
+        android:id="@+id/name"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/Textcolor"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Initials : "
+            android:layout_below="@+id/name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+             android:textColor="@color/Textcolor"
+            android:id="@+id/initial"
+
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="DOB : "
+        android:id="@+id/dob"
+        android:layout_below="@+id/initial"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/Textcolor"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender :"
+        android:layout_marginTop="20dp"
+        android:id="@+id/gender"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/dob"
+        android:textSize="20dp"
+        android:textColor="@color/Textcolor"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age : "
+            android:layout_marginTop="20dp"
+            android:id="@+id/age"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/gender"
+            android:textSize="20dp"
+            android:textColor="@color/Textcolor"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Site Number : "
+            android:layout_marginTop="20dp"
+            android:id="@+id/sitenotext"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/age"
+            android:textSize="20dp"
+            android:textColor="@color/Red"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 123 "
+            android:layout_marginTop="20dp"
+            android:id="@+id/siteno"
+            android:layout_toRightOf="@+id/sitenotext"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/age"
+            android:textSize="20dp"
+            android:textColor="@color/Textcolor"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sitenotext"
+            android:layout_marginTop="20dp"
+            android:text="ADD"
+            android:id="@+id/addbuttonpatient"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonlogin"
+
+            />
+
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            android:id="@+id/initialsentry"
+            android:layout_toRightOf="@+id/initial"
+            android:layout_below="@+id/nameentry"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/searchedit"
+
+
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            android:id="@+id/nameentry"
+            android:layout_toRightOf="@+id/initial"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/searchedit"
+
+
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/datedisplay"
+            android:layout_below="@+id/initialsentry"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonlogin"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/setdate"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/initial"
+            android:layout_below="@+id/initialsentry"
+            android:layout_marginTop="20dp"
+            android:id="@+id/datedisplay"
+            android:text="11/11/11"
+            android:textColor="@color/Textcolor"
+            android:textStyle="bold"
+
+
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/genderspinner"
+            android:layout_below="@+id/dob"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/initial"
+
+            ></Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/initial"
+            android:layout_below="@+id/genderspinner"
+            android:layout_marginTop="30dp"
+            android:id="@+id/agetext"
+
+
+            />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,285 @@
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/loginback"
+    android:layout_height="match_parent"
+    tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anthropometry"
+        android:layout_gravity="center"
+        android:textColor="@color/Textcolor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100"
+        android:layout_marginTop="50dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/heighttext"
+        android:layout_marginLeft="30dp"
+        android:text="HEIGHT"
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+
+
+
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:singleLine="true"
+        android:layout_weight="40"
+
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/heighttext"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/heightentry"
+        />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+         android:layout_weight="20"
+            android:layout_toRightOf="@+id/heightentry"
+            android:text="Cm"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100"
+        android:layout_marginTop="20dp"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_weight="0"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/weight"
+        android:layout_below="@+id/heighttext"
+        android:layout_marginLeft="30dp"
+        android:text="WEIGHT"
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="40"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/heighttext"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/heightentry"
+        android:layout_marginRight="10dp"
+
+        android:id="@+id/weightentry"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        android:layout_weight="20"
+            android:layout_toRightOf="@+id/heightentry"
+            android:text="Kg"
+            android:layout_below="@+id/heightentry"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100"
+        android:layout_marginTop="20dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/bmitext"
+        android:layout_below="@+id/weightentry"
+        android:layout_marginLeft="30dp"
+        android:text="BMI"
+        android:textColor="@color/Textcolor"
+        android:textSize="15dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bmitext"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/Textcolor"
+        android:layout_below="@+id/weightentry"
+        android:layout_marginRight="50dp"
+
+        android:id="@+id/bmientry"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_toRightOf="@+id/bmientry"
+        android:layout_below="@+id/weightentry"
+        android:text="CALCULATE"
+        android:id="@+id/calcbmi"
+
+        android:background="@drawable/buttonlogin"
+
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmientry"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:text="TANNER STAGES"
+        android:textColor="@color/Textcolor"
+        android:id="@+id/tannertext"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100"
+        android:layout_marginTop="20dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tannertext"
+
+        android:layout_marginLeft="30dp"
+        android:id="@+id/testicvolumetext"
+        android:text="Testicular volume : "
+        android:textColor="@color/Textcolor"
+
+
+        />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/testicvolumetext"
+    android:layout_marginRight="80dp"
+    android:singleLine="true"
+    android:layout_below="@+id/tannertext"
+
+    android:layout_marginLeft="10dp"
+    android:id="@+id/testvolumeentry"
+
+    />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100"
+        android:layout_marginTop="20dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testicvolumetext"
+
+        android:layout_marginLeft="40dp"
+        android:text="PUBIC HAIR: "
+        android:textColor="@color/Textcolor"
+        android:id="@+id/pubictext"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/pubictext"
+        android:layout_below="@id/testicvolumetext"
+
+        android:id="@+id/pubicspinner"
+
+
+
+        ></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100"
+        android:layout_marginTop="20dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pubictext"
+
+        android:layout_marginLeft="40dp"
+        android:text="AUXILLARY HAIR: "
+        android:textColor="@color/Textcolor"
+        android:id="@+id/auxtext"
+        />
+
+    <Spinner
+        android:id="@+id/auxspinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/pubicspinner"
+
+
+        android:layout_toRightOf="@+id/auxtext"></Spinner>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auxtext"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttonlogin"
+        android:text="SUBMIT"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/submit"
+
+
+        />
+
+
+
+
+
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,59 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:background="#F581BE"
+            android:foregroundGravity="fill"
+            app:tabMode="fixed"
+
+
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tab2"
+            >
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:text="Baseline Visit"
+                android:id="@+id/basselinevisit"
+
+
+
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow up visits"
+                android:layout_gravity="fill"
+                android:id="@+id/followupvisits"
+                />
+
+        </android.support.design.widget.TabLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/tab2"
+            android:id="@+id/demographycontainer"
+
+
+            ></FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

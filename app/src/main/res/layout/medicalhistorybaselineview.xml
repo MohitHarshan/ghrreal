@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    >
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical History"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/Textcolor"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pubertal Status: "
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/pubertal"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entered Puberty : "
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/pubertal"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/enteredpuberty"
+
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pubertyradio"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pubertal"
+        android:layout_toRightOf="@+id/pubertal"
+        android:checkedButton="1"
+
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/enteredpuberty"
+            android:layout_below="@+id/pubertal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="YES"
+            android:id="@+id/checkyes"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/checkyes"
+            android:layout_below="@+id/pubertal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="NO"
+            android:id="@+id/checkno"
+            />
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLINICAL FEATURES (SYNDROMIC FEATURES):"
+        android:layout_below="@+id/enteredpuberty"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/clinical"
+
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clinicalfeaturesentry"
+        android:layout_below="@+id/clinical"
+        android:layout_margin="20dp"
+        android:maxLines="5"
+        android:background="@drawable/edittexts"
+android:padding="10dp"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clinicalfeaturesentry"
+        android:layout_marginLeft="20dp"
+        android:text="ANY PREVIOUS SURGERIES:"
+        android:textColor="@color/Textcolor"
+        android:id="@+id/previous"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/previoussurgeryentry"
+        android:layout_below="@+id/previous"
+        android:layout_margin="20dp"
+        android:maxLines="5"
+        android:background="@drawable/edittexts"
+
+android:padding="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/previoussurgeryentry"
+        android:layout_marginLeft="20dp"
+        android:text="ANY OTHER RELEVANT MEDICAL HISTORY :"
+        android:textColor="@color/Textcolor"
+        android:id="@+id/relevant"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relevantentry"
+        android:layout_below="@+id/relevant"
+        android:layout_margin="20dp"
+        android:maxLines="5"
+        android:padding="10dp"
+        android:background="@drawable/edittexts"
+android:layout_marginBottom="20dp"
+
+
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,970 @@
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/loginback"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:text="LABORATORY TESTS"
+            android:textSize="20dp"
+            android:textColor="@color/Textcolor"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="DATE"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"
+                android:id="@+id/date"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/date"
+                android:layout_marginLeft="10dp"
+
+                android:id="@+id/datedisplayed"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="TEST"
+                android:layout_weight="50"
+                android:layout_below="@+id/date"
+                android:textSize="20dp"
+                android:id="@+id/testtext"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/testtext"
+               android:gravity="center"
+                android:text="VALUE"
+                android:layout_weight="50"
+                android:id="@+id/valuetext"
+                android:layout_below="@+id/date"
+                android:textSize="20dp"
+                android:textColor="@color/Textcolor"
+
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/testtext"
+                android:layout_marginLeft="30dp"
+
+                android:text="FREE T3"
+                android:id="@+id/freet3"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+android:gravity="center"
+                android:layout_weight="50"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/valuetext"
+               android:layout_marginLeft="10dp"
+                android:id="@+id/freet3entry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/freet3"
+                android:layout_marginLeft="30dp"
+                android:text="FREE T4"
+                android:id="@+id/freet4"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/freet3entry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/freet4entry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/freet4"
+                android:layout_marginLeft="30dp"
+                android:text="T3"
+                android:layout_weight="50"
+                android:id="@+id/t3"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/freet4entry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/t3entry"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/t3"
+                android:layout_marginLeft="30dp"
+                android:text=" T4"
+                android:id="@+id/t4"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/t3entry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/t4entry"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/t4"
+                android:layout_marginLeft="30dp"
+                android:text="TSH"
+                android:id="@+id/tsh"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+   android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/t4entry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tbhentry"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/tsh"
+                android:layout_weight="50"
+                android:layout_marginLeft="30dp"
+                android:text="CORTISOL LEVEL"
+                android:id="@+id/cortisollevel"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+  android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/tbhentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/cortisolentry"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/cortisollevel"
+                android:layout_marginLeft="30dp"
+                android:text="GH BASELINE"
+                android:id="@+id/ghbaseline"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/cortisolentry"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:id="@+id/ghbaselineentry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/ghbaseline"
+                android:layout_marginLeft="30dp"
+                android:text="GH MAXIMUM STIMULATED"
+                android:id="@+id/ghmaximumstimulated"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/ghbaselineentry"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:id="@+id/ghmaximumstimulatedentry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/ghmaximumstimulated"
+                android:layout_marginLeft="30dp"
+                android:text="BUN"
+                android:id="@+id/bun"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+   android:gravity="center"
+                android:layout_weight="50"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/ghmaximumstimulatedentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/bunentry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/bun"
+                android:layout_marginLeft="30dp"
+                android:text="CREATININE"
+                android:id="@+id/creatinine"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/bunentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/creatinineentry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_below="@+id/creatinine"
+                android:layout_marginLeft="30dp"
+                android:text="NA+"
+                android:id="@+id/NA"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/creatinineentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/NAentry"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/NA"
+                android:layout_marginLeft="30dp"
+                android:text="K+"
+                android:id="@+id/K"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/NAentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Kentry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_below="@+id/K"
+                android:layout_marginLeft="30dp"
+                android:text="HCO3-"
+                android:id="@+id/Hco3"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_toRightOf="@+id/tissue"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/Kentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/HCO3entry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/Hco3"
+                android:layout_marginLeft="30dp"
+                android:text="HB"
+                android:id="@+id/hb"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/HCO3entry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/HBentry"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/hb"
+                android:layout_marginLeft="30dp"
+                android:text="WATER DEPRIVATION TEST"
+                android:id="@+id/water"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/HBentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/waterentry"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/water"
+                android:layout_marginLeft="30dp"
+                android:text="SGPT"
+                android:id="@+id/sgpt"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/waterentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/sgptentry"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/sgpt"
+                android:layout_marginLeft="30dp"
+                android:text="IGF-1"
+                android:id="@+id/igf1"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_toRightOf="@+id/tissue"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/sgptentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/IGF1entry"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/igf1"
+                android:layout_marginLeft="30dp"
+                android:text="IGBP3"
+                android:id="@+id/igp3"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/IGF1entry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/IGP3entry"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/igp3"
+                android:layout_marginLeft="30dp"
+                android:text="Estradiol"
+                android:id="@+id/estradiol"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+android:gravity="center"
+                android:layout_below="@+id/IGP3entry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/estradiolentry"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/estradiol"
+                android:layout_marginLeft="30dp"
+                android:text="Testosterone"
+                android:id="@+id/testoserone"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/estradiolentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/testosteroneentry"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_below="@+id/testoserone"
+                android:layout_marginLeft="30dp"
+                android:text="Prolactin"
+                android:id="@+id/prolactin"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/testosteroneentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/prolactinentry"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/prolactin"
+                android:layout_marginLeft="30dp"
+                android:text="Tissue Transglutaminase"
+                android:textAllCaps="true"
+                android:id="@+id/tissue"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/prolactinentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tissueentry"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/tissue"
+                android:layout_marginLeft="30dp"
+                android:text="LH"
+                android:id="@+id/lh"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/tissueentry"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/LHentry"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/lh"
+                android:layout_marginLeft="30dp"
+                android:text="FSH "
+                android:id="@+id/fsh"
+                android:textSize="15dp"
+                android:textColor="@color/Textcolor"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tissue"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/LHentry"
+                android:layout_marginLeft="10dp"
+android:layout_marginBottom="20dp"
+                android:id="@+id/fshentry"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

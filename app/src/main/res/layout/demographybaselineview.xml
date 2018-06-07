@@ -1,0 +1,472 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/loginback"
+        android:layout_height="match_parent"
+        tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Demography"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/Textcolor"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:text="GENDER :"
+                android:id="@+id/gender"
+                android:textColor="@color/Textcolor"
+                android:textStyle="bold"
+                android:textSize="18dp"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gender"
+
+                android:layout_marginLeft="10dp"
+                android:text="MALE"
+                android:id="@+id/genderdisplay"
+
+
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+
+                android:layout_marginLeft="20dp"
+                android:text="DOB :"
+                android:id="@+id/dob"
+                android:textStyle="bold"
+                android:textColor="@color/Textcolor"
+                android:textSize="18dp"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/gender"
+                android:layout_toRightOf="@+id/dob"
+                android:text="11/11/11"
+                android:id="@+id/dobdatedisplay"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dob"
+
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="Gestational Age :"
+                android:textStyle="bold"
+                android:id="@+id/gest"
+                android:textSize="18dp"
+
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dob"
+                android:layout_toRightOf="@+id/midparental"
+                android:layout_marginRight="20dp"
+                android:id="@+id/gestationalageentry"
+
+
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/gest"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="Birth Length :"
+                android:textStyle="bold"
+                android:id="@+id/birthlength"
+                android:textSize="18dp"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gestationalageentry"
+                android:layout_toRightOf="@+id/midparental"
+                android:layout_marginRight="20dp"
+                android:id="@+id/birthlengthentry"
+
+
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/birthlength"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="Birth Weight :"
+                android:textStyle="bold"
+                android:id="@+id/birthweight"
+                android:textSize="18dp"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birthlengthentry"
+                android:layout_toRightOf="@+id/midparental"
+                android:layout_marginRight="20dp"
+                android:id="@+id/birthweightentry"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/birthweight"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="Current Height :"
+                android:textStyle="bold"
+                android:id="@+id/currentheight"
+                android:textSize="18dp"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birthweightentry"
+
+                android:layout_marginRight="10dp"
+                android:id="@+id/currentheightentry"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@+id/birthweight"
+
+                android:text="Cm"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/currentheight"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="Current Weight :"
+                android:id="@+id/currentweight"
+                android:textStyle="bold"
+                android:textSize="18dp"
+
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentheightentry"
+                android:layout_toRightOf="@+id/midparental"
+                android:layout_marginRight="10dp"
+                android:id="@+id/currentweighteentry"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/currentheightentry"
+
+                android:layout_below="@+id/currentheightentry"
+
+                android:text="Kg"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/currentweight"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="Mother’s Height :"
+                android:id="@+id/mothersheight"
+                android:textStyle="bold"
+                android:textSize="18dp"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentweighteentry"
+                android:layout_toRightOf="@+id/midparental"
+                android:layout_marginRight="20dp"
+                android:id="@+id/mothersheightentry"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/mothersheight"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="Fathers’s Height :"
+                android:id="@+id/fathersheight"
+                android:textStyle="bold"
+                android:textSize="18dp"
+
+
+
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mothersheightentry"
+                android:layout_toRightOf="@+id/midparental"
+                android:layout_marginRight="20dp"
+                android:id="@+id/fathersheightentry"
+
+
+
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/fathersheight"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="Mid parental height :"
+                android:id="@+id/midparental"
+                android:textStyle="bold"
+                android:textSize="18dp"
+
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fathersheightentry"
+                android:layout_toRightOf="@+id/midparental"
+                android:layout_marginRight="20dp"
+                android:id="@+id/midparentalentry"
+
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/midparental"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="20dp"
+                android:text="BMI :"
+                android:id="@+id/bmi"
+                android:textStyle="bold"
+                android:textSize="18dp"
+
+
+
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI DISPLAY"
+                android:layout_below="@+id/midparentalentry"
+                android:id="@+id/bmidisplay"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/midparental"
+                android:textColor="@color/Red"
+android:layout_marginBottom="20dp"
+
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

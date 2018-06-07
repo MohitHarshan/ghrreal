@@ -1,0 +1,443 @@
+<android.support.v4.widget.NestedScrollView
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:orientation="vertical"
+        android:background="@drawable/loginback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Textcolor"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Treated with Growth Hormone"
+                android:textColor="@color/Textcolor"
+                android:id="@+id/treatedtext"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/treatedtext"
+                android:id="@+id/treatedgrowth"
+                android:layout_marginLeft="10dp"
+
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:id="@+id/yes"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/no"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/treatedtext"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="GH BRAND"
+            android:textSize="20dp"
+            android:textColor="@color/Textcolor"
+            android:id="@+id/ghbrand"
+            />
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ghbrand"
+            android:layout_below="@+id/treatedtext"
+            android:id="@+id/ghbrandradio"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Innovator"
+                android:id="@+id/innovator"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biosimilar"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/biosimilar"
+                />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ghbrand"
+                android:id="@+id/device"
+                android:text="DEVICE: "
+                android:textSize="20dp"
+                android:textColor="@color/Textcolor"
+                android:layout_marginLeft="25dp"
+
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/device"
+                android:layout_below="@+id/ghbrand"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/devicespinner"
+                >
+
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/device"
+                android:layout_marginLeft="30dp"
+                android:text="START DATE"
+                android:textColor="@color/Textcolor"
+                android:id="@+id/starttext"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/starttext"
+                android:layout_below="@+id/device"
+
+                android:layout_marginLeft="20dp"
+                android:id="@+id/startdatedisplay"
+                />
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/device"
+
+                android:layout_toRightOf="@+id/startdatedisplay"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/buttonlogin"
+                android:id="@+id/startchoose"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/startdatedisplay"
+                android:layout_marginLeft="30dp"
+                android:text="STOP DATE"
+                android:textColor="@color/Textcolor"
+                android:id="@+id/stoptext"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/starttext"
+                android:layout_below="@+id/starttext"
+
+                android:layout_marginLeft="20dp"
+
+                android:id="@+id/stopdatedisplay"
+                />
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/startdatedisplay"
+
+                android:layout_toRightOf="@+id/startdatedisplay"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/buttonlogin"
+                android:id="@+id/stopchoose"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stopchoose"
+
+                android:layout_marginLeft="30dp"
+                android:text="GH DOSE: "
+                android:textSize="20dp"
+                android:textColor="@color/Textcolor"
+                android:id="@+id/ghdose"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stopchoose"
+                android:id="@+id/ghdoseentry"
+
+                android:layout_toRightOf="@+id/ghdose"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="90dp"
+                />
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ghdose"
+            android:layout_marginTop="40dp"
+            android:id="@+id/suoervisedornot"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supervised"
+                android:id="@+id/supervised"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-Supervised"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/nonsupervised"
+                />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/suoervisedornot"
+            android:layout_marginTop="20dp"
+            android:id="@+id/interornot"
+
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intermittent"
+                android:id="@+id/intermittent"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continuous"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/continuous"
+                />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interornot"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="PREVIOUS HISTORY"
+            android:id="@+id/previoushistory"
+            android:textColor="@color/Textcolor"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did the patient receive GH on any previous occasion?"
+            android:layout_below="@+id/previoushistory"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/didprevios"
+            android:textColor="@color/Textcolor"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/didprevios"
+            android:id="@+id/didpreviosoccaion"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:id="@+id/yesprevious"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/noprevious"
+                />
+
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/didpreviosoccaion"
+            android:layout_marginLeft="20dp"
+            android:text="If yes,add details: "
+            android:textColor="@color/Textcolor"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ifyes"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+android:padding="2dp"
+            android:maxLines="5"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/ifyes"
+            android:background="@drawable/edittexts"
+            android:id="@+id/ifyesentry"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longest gap for non-adherence to growth hormone therapy:"
+            android:layout_below="@+id/ifyesentry"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/longesttext"
+            android:textColor="@color/Textcolor"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/longestgapentry"
+            android:layout_below="@+id/longesttext"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="150dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason for non-adherence to therapy: "
+            android:layout_below="@+id/longestgapentry"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/reasontext"
+            android:textColor="@color/Textcolor"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittexts"
+            android:id="@+id/reasonentry"
+            android:maxLines="5"
+            android:padding="2dp"
+            android:layout_below="@+id/reasontext"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/reasonentry"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/submit"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonlogin"
+            android:text="SUBMIT"
+            android:textColor="#FFFFFF"
+            />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

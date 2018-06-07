@@ -1,0 +1,328 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<RelativeLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:background="@drawable/loginback"
+    android:layout_height="match_parent"
+    tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demography"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/Textcolor"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:text="GENDER :"
+        android:id="@+id/gender"
+        android:textColor="@color/Textcolor"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="DOB :"
+        android:id="@+id/dob"
+        android:textStyle="bold"
+        android:textColor="@color/Textcolor"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="Gestational Age: :"
+        android:textStyle="bold"
+        android:id="@+id/gest"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/gest"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="Birth Length: :"
+        android:textStyle="bold"
+        android:id="@+id/birthlength"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/birthlength"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="Birth Weight: :"
+        android:textStyle="bold"
+        android:id="@+id/birthweight"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/birthweight"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="Current Height :"
+        android:textStyle="bold"
+        android:id="@+id/currentheight"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/currentheight"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="Current Weight :"
+        android:id="@+id/currentweight"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/currentweight"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="Mother’s Height :"
+        android:id="@+id/mothersheight"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mothersheight"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="Fathers’s Height :"
+        android:id="@+id/fathersheight"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/fathersheight"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="Mid parental height :"
+        android:id="@+id/midparental"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/midparental"
+        android:textColor="@color/Textcolor"
+        android:layout_marginLeft="20dp"
+        android:text="BMI :"
+        android:id="@+id/bmi"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gestationalageentry"
+        android:layout_toRightOf="@+id/midparental"
+        android:layout_marginRight="20dp"
+        android:id="@+id/birthlengthentry"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthlengthentry"
+        android:layout_toRightOf="@+id/midparental"
+        android:layout_marginRight="20dp"
+        android:id="@+id/birthweightentry"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/birthweightentry"
+        android:layout_toRightOf="@+id/midparental"
+        android:layout_marginRight="20dp"
+        android:id="@+id/currentheightentry"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentheightentry"
+        android:layout_toRightOf="@+id/midparental"
+        android:layout_marginRight="20dp"
+        android:id="@+id/currentweighteentry"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentweighteentry"
+        android:layout_toRightOf="@+id/midparental"
+        android:layout_marginRight="20dp"
+        android:id="@+id/mothersheightentry"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_toRightOf="@+id/midparental"
+        android:layout_marginRight="20dp"
+        android:id="@+id/gestationalageentry"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mothersheightentry"
+        android:layout_toRightOf="@+id/midparental"
+        android:layout_marginRight="20dp"
+        android:id="@+id/fathersheightentry"
+
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fathersheightentry"
+        android:layout_toRightOf="@+id/midparental"
+        android:layout_marginRight="20dp"
+        android:id="@+id/midparentalentry"
+
+
+
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/midparentalentry"
+        android:layout_toRightOf="@+id/bmi"
+        android:text="CAlculate"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="10dp"
+        android:textSize="7dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonlogin"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI DISPLAY"
+        android:layout_below="@+id/midparentalentry"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/midparental"
+        android:textColor="@color/Red"
+
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonlogin"
+
+
+
+
+        />
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

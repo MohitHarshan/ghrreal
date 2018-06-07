@@ -1,0 +1,317 @@
+<android.support.v4.widget.NestedScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginback"
+        tools:context="com.example.reubro.ghr.PatientDetailsActivity$PlaceholderFragment">
+
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anthropometry"
+            android:textColor="@color/Textcolor"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/heighttext"
+                android:layout_marginLeft="30dp"
+                android:text="HEIGHT"
+                android:textColor="@color/Textcolor"
+                android:textSize="15dp"
+
+
+
+                />
+            <EditText
+                android:layout_width="150dp"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/heighttext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+
+                android:id="@+id/heightentry"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/heightentry"
+
+                android:text="Cm"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/weight"
+                android:layout_below="@+id/heighttext"
+                android:layout_marginLeft="30dp"
+                android:text="WEIGHT"
+                android:textColor="@color/Textcolor"
+                android:textSize="15dp"
+
+                />
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/heighttext"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/heightentry"
+                android:layout_marginRight="10dp"
+                android:inputType="numberDecimal"
+
+                android:id="@+id/weightentry"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/weightentry"
+                android:text="Kg"
+
+                android:layout_below="@+id/heightentry"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/bmitext"
+                android:layout_below="@+id/weightentry"
+                android:layout_marginLeft="30dp"
+                android:text="BMI"
+                android:textColor="@color/Textcolor"
+                android:textSize="15dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/bmitext"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/Textcolor"
+                android:layout_below="@+id/weightentry"
+                android:layout_marginRight="50dp"
+
+                android:id="@+id/bmientry"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@+id/bmientry"
+                android:layout_below="@+id/weightentry"
+                android:text="CALCULATE"
+                android:id="@+id/calcbmi"
+
+                android:background="@drawable/buttonlogin"
+
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bmientry"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:text="TANNER STAGES"
+            android:textColor="@color/Textcolor"
+            android:id="@+id/tannertext"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tannertext"
+
+                android:layout_marginLeft="40dp"
+                android:text="BREASTS: "
+                android:textColor="@color/Textcolor"
+                android:id="@+id/breasttext"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/breasttext"
+                android:layout_below="@id/tannertext"
+
+                android:layout_marginLeft="40dp"
+                android:id="@+id/breastspinner"
+
+
+
+                ></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/breasttext"
+
+                android:layout_marginLeft="40dp"
+                android:text="PUBIC HAIR: "
+                android:textColor="@color/Textcolor"
+                android:id="@+id/pubictext"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/breasttext"
+                android:layout_below="@id/breastspinner"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/pubicspinner"
+
+
+
+                ></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pubictext"
+
+                android:layout_marginLeft="40dp"
+                android:text="AUXILLARY HAIR: "
+                android:textColor="@color/Textcolor"
+                android:id="@+id/auxtext"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/auxtext"
+                android:layout_below="@id/pubicspinner"
+
+                android:id="@+id/auxspinner"
+                android:layout_marginLeft="30dp"
+
+
+                ></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/auxtext"
+
+                android:layout_marginLeft="40dp"
+                android:text="MENARCHE : "
+                android:textColor="@color/Textcolor"
+                android:id="@+id/menarchetext"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menarchetext"
+
+                android:id="@+id/menarche"
+                android:layout_below="@+id/auxtext"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:id="@+id/menarcheyes"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/menarcheno"
+                    />
+
+
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menarche"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/submitanthro"
+            android:text="SUBMIT"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonlogin"
+            android:textColor="#FFFFFF"
+
+
+            />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/loginback"
+    android:layout_height="match_parent"
+    tools:context="com.example.reubro.ghr.SplashActivity">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="60dp"
+      android:layout_centerHorizontal="true"
+      android:text="LOGIN"
+      android:textSize="50dp"
+      android:textStyle="italic"
+      android:textColor="@color/colorAccent"
+
+
+      />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/sitenoWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:errorEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/siteno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="siteno"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sitenoWrapper"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:errorEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/passwordWrapper"
+    android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+    android:text="LOGIN"
+    android:id="@+id/login"
+    android:background="@drawable/buttonlogin"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="forgot password?"
+        android:id="@+id/forgotpassword"
+
+        />
+
+
+
+
+</RelativeLayout>
